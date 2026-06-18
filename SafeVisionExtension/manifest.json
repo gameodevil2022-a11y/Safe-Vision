@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "SafeVision Text Moderator (v0.1)",
+    "version": "0.1",
+    "description": "Real-time text-only content moderation.",
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": [
+        "storage",
+        "alarms"
+    ],
+    "host_permissions": [
+        "<all_urls>",
+        "http://127.0.0.1:5000/",
+        "http://localhost:5000/"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"],
+            "run_at": "document_idle",
+            "all_frames": true 
+        }
+    ]
+}

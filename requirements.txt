@@ -1,0 +1,19 @@
+numpy
+pandas
+transformers
+# torch — DO NOT install from here! Install CUDA version separately:
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu124
+# Plain "pip install torch" gives CPU-only (15x slower, no GPU)
+accelerate
+python-dotenv
+huggingface-hub
+detoxify
+flask 
+flask-cors
+requests
+transformers 
+pillow
+scikit-learn
+datasets
+hf_xet
+-e .

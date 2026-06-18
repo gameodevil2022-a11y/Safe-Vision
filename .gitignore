@@ -1,0 +1,38 @@
+# Environment & secrets
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+
+# ML models (too large for git)
+fine_tuned_nsfw_model/
+*.pth
+*.pt
+*.safetensors
+*.bin
+
+# Training logs
+training_logs/
+
+# Data
+dataset/
+Images/
+
+# Node
+node_modules/
+
+# IDE
+.vscode/
+*.swp
+
+# Tool-generated output
+graphify-out/
+
+# Agent config
+.agents/
+
+# Logs
+*.log
